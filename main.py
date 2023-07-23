@@ -16,7 +16,6 @@ async def main():
     while True:
         page += 1
         lips.get_links(page)
-        print(lips.links)
         for link in lips.links:
             #data output
             liis.get_info(link)
