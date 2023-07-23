@@ -13,7 +13,7 @@ class LIInfoScrapper:
         for key, value in custom_headers.items():
             options.add_argument(f"--header={key}:{value}")
         self.driver: webdriver.Edge = webdriver.Edge(options=options)
-        self.DEBUG: bool = True
+        self.DEBUG: bool = False
         self.info: str
         self.name: str
         self.location: str
