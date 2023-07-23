@@ -30,8 +30,8 @@ To start the web scraping process, simply run the `main.py` script. This will in
 The scraped data will be collected to a PostgreSQL database. The connection URL for the database is set to `'postgresql://postgres:adminpass123@localhost/gino'`. Ensure that you have PostgreSQL installed and running on your local machine to store the data properly.
 
 ## Requirements
-- Selenium 4.9.0
-
+- selenium 4.9.0
+- gino 1.1.0rc1
 ## Installation
 1. Clone the repository:
 git clone https://github.com/2tieatie/test_task.git
