@@ -27,8 +27,8 @@ driver_options: tuple = ('--enable-features=NetworkService,NetworkServiceInProce
                           '--enable-automation',
                           '--metrics-recording-only',
                           '--no-first-run')
-#search query 
-query: str = 'developer'
+#search query
+query: str = 'programmer'
 #link pattern
 pattern: str = f'https://www.linkedin.com/search/results/people/?keywords={query}'
 #trash, that has same tags
@@ -36,3 +36,7 @@ wrong_results: tuple = ('https://www.linkedin.com/feed/?nis=true',
                        f'https://www.linkedin.com/search/results/people/headless?origin=OTHER&keywords={query}')
 #link part with profile contact info
 cont_inf_pattern: str = '/overlay/contact-info/'
+custom_headers = {
+    "User-Agent": "Your User Agent String",
+    "Accept-Language": "en"
+}
