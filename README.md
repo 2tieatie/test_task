@@ -30,10 +30,7 @@ To start the web scraping process, simply run the `main.py` script. This will in
 The scraped data will be collected to a PostgreSQL database. The connection URL for the database is set to `'postgresql://postgres:adminpass123@localhost/gino'`. Ensure that you have PostgreSQL installed and running on your local machine to store the data properly.
 
 ## Requirements
-- Python
 - Selenium 4.9.0
-- EdgeDriver
-- PostgreSQL
 
 ## Installation
 1. Clone the repository:
@@ -54,4 +51,5 @@ If you encounter any issues during web scraping, you can customize the EdgeDrive
 Keep in mind that LinkedIn may have algorithms in place to prevent extensive web scraping. A single query in this project retrieves only the first 100 pages of data to avoid potential issues with LinkedIn policies.
 
 ## Author
-This project was made by Misha Tumanov with 🐍❤️.
+Made by Misha Tumanov with 🐍❤️
+
