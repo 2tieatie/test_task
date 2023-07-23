@@ -5,7 +5,7 @@ from selenium.common.exceptions import NoSuchElementException
 
 
 class LIInfoScrapper:
-
+    
     def __init__(self):
         options: webdriver.EdgeOptions = webdriver.EdgeOptions()
         for option in driver_options:
@@ -17,7 +17,7 @@ class LIInfoScrapper:
         self.location: str
 
     def get_info(self, link: str):
-
+        #collecting data from html by xpath
         self.driver.get(link)
         self.name = self.driver.find_element(By.XPATH, "//h1[@id='pv-contact-info']").text.strip()
 
