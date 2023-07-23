@@ -15,7 +15,7 @@ class LIProfilesScrapper:
 
     def get_links(self, page: int):
         self.driver.get(f'{pattern}&page={page}')
-
+        #collecting data from html by xpath
         try:
             self.driver.find_element(By.XPATH, '//div[@class="search-reusable-search-no-results artdeco-card mb2"]')
             self.elements = None
@@ -30,13 +30,13 @@ class LIProfilesScrapper:
 
     def parse_links(self):
         links = []
-
+        
         if self.DEBUG:
             print(self.elements)
-
+        #getting href of profile contact info
         for element in self.elements:
             link_raw = element.get_attribute('href')
-
+            #deleting useless part of url 
             if link_raw not in wrong_results:
                 link = f'{link_raw[:link_raw.find("?"):]}{cont_inf_pattern}'
                 links.append(link)
